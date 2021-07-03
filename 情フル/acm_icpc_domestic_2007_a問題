@@ -1,0 +1,31 @@
+import importlib
+
+
+def answer3(input_file_name, output_file_name):
+    input_file = open(input_file_name)
+    output_file = open(output_file_name, 'w')
+
+    # とにかく繰り返す
+    while True:
+        # 引数を数値(整数)にして返す関数intを利用
+        n = int(input_file.readline())
+        if n == 0:
+            # 繰り返しをやめる。この関数を終了する
+            break
+        score = []
+        # nに記載されている回数分繰り返す
+        for i in range(n): 
+            line = input_file.readline()
+            # 数値に変換してscoreリストに追加する
+            score = score + [int(line)] 
+        
+        # リスト内の合計からリスト内の最大値と最小値を引くことで両値を除外する
+        sums = sum(score) - max(score) - min(score)
+        # 最大値と最小値を除いた平均値を求める
+        averages = sums / (n-2)
+        # 平均点の端点を切り捨て、アウトプットファイルに書き込む
+        output_file.write(str(int(averages)) + '\n')
+    
+    input_file.close()
+    output_file.close()
+    return
