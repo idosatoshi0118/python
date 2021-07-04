@@ -11,5 +11,3 @@ Google code jam 2012 qualification roundの[Speaking in tongues](https://codingc
 入力がrbcpc ypc rtcsra dkh wyfrepkym veddknkmkrkcd ならば，出力はthere are twenty six factorial possibilitiesである．
 
 入力がde kr kd eoya kw aej tysr re ujdr lkgc jvならば，出力はso it is okay if you want to just give upである．
-
-よって，この例からGoogle語と英語の辞書（略してグー英辞書）を作れば楽勝に思える．
